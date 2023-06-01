@@ -1,0 +1,334 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+    margin: 10px;
+}
+
+/*HEADER*/
+
+.top-header{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+
+
+header{
+    background-color: #EAC926;
+}
+
+/* header div.logo{
+    width: 50%;
+} */
+
+.logo, .search, .buy-card {
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+
+header nav{
+    font-size: 12px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*SEARCH*/
+
+.search{
+    display: flex;
+    background-color: #FFF;
+    border-radius: 10px;
+    border: none;
+    height: 37px;
+    margin-top: 10px;
+}
+
+.search .input-search{
+    border: none;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.search .fa-search{
+    margin: 5px;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*HORIZONTAL NAV*/
+nav {
+    display: none;
+}
+
+/*BURGER-MENU*/
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+/*BOX-ARTICLE*/
+.price{
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+/*MAIN*/
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+    position: relative;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+.fa-truck:hover{
+    transition: 1000ms;
+    transform: rotate(-90deg);
+}
+
+main section article:hover .description {
+    display: block;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+.priceBox {
+    display: flex;
+    align-items: stretch;
+}
+
+/*LOGIN*/
+
+.login-btn:hover{
+    background-color: #3498db;
+}
+
+/*FOOTER*/
+.article-footer{
+    text-align: center;
+    margin: 35px 55px;
+}
+
+ .i-footer {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.i-footer:hover{
+    color: #666;
+}
+
+.align-footer{
+    text-align: center;
+}
+.fa-credit-card{
+    font-size: 2em;
+    text-align: center;
+}
+
+.fa-gift{
+    font-size: 2em;
+    text-align: center; 
+}
+
+.fa-user-shield{
+    font-size: 2em;
+    text-align: center; 
+}
+
+.footer-tittle {
+    text-align: center;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.footer-title-copy {
+    text-align: center;
+    
+}
+/*----------------------------TABLET----------------------------------*/
+
+@media (min-width: 361px){
+
+    div.burger-menu {
+        display: none;
+    }
+
+    /*SEARCH*/
+    .logo, .search, .buy-card {
+        width: 30%;
+    }
+
+    .buy-card{
+        margin: auto;
+    }
+
+    /*HORIZONAL NAV*/
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+    }
+
+    .first-ul{
+        margin-left: 10vw;
+    }
+
+    .second-ul{
+        margin-right: 10vw;
+    }
+
+    nav ul li{
+        padding: 5px;
+        margin: auto;
+    }
+
+    nav ul li a {
+        font-size: 75%;
+    }
+
+    /*MAIN*/
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40vw;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+/*----------------------------DESK----------------------------------*/
+@media (min-width: 769px){ 
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 20vw;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav ul li a {
+        font-size: 100%;
+    }
+
+    .container-articles{
+        display: flex;
+        align-items: flex-start;
+    }
+
+}

@@ -1,0 +1,57 @@
+
+/*REGISTER-LOGIN*/
+main{
+    margin-bottom: 50%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 10px auto;
+    background-color: #7d757552;
+    border-radius: 3px;
+    max-width: 400px;
+    min-height: 400px;
+}
+
+input{
+    margin: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.send, .login-btn{
+    background-color: #0044AA;
+    border: #0044AA;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px;
+}
+
+.reset{
+    background-color: #666666;
+    border: #666666;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px;
+}
+
+.title-register{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.login input {
+    margin-bottom: 30px;
+    width: 60%;
+    height: 30px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+form img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
